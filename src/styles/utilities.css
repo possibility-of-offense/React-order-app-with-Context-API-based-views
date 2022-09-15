@@ -1,0 +1,15 @@
+.ml-auto {
+  margin-left: auto;
+}
+
+.modified-bg-primary-color {
+  background-color: rgba(13, 110, 253, 0.7) !important;
+}
+
+.remove-all-styling {
+  all: unset;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
