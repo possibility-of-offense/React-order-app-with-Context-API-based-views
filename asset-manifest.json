@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/possibility-of-offense/React-order-app-with-Context-API-based-views/static/css/main.fb6507eb.css",
+    "main.js": "/possibility-of-offense/React-order-app-with-Context-API-based-views/static/js/main.0fdb8ce8.js",
+    "static/js/787.ae0cd389.chunk.js": "/possibility-of-offense/React-order-app-with-Context-API-based-views/static/js/787.ae0cd389.chunk.js",
+    "index.html": "/possibility-of-offense/React-order-app-with-Context-API-based-views/index.html",
+    "main.fb6507eb.css.map": "/possibility-of-offense/React-order-app-with-Context-API-based-views/static/css/main.fb6507eb.css.map",
+    "main.0fdb8ce8.js.map": "/possibility-of-offense/React-order-app-with-Context-API-based-views/static/js/main.0fdb8ce8.js.map",
+    "787.ae0cd389.chunk.js.map": "/possibility-of-offense/React-order-app-with-Context-API-based-views/static/js/787.ae0cd389.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fb6507eb.css",
+    "static/js/main.0fdb8ce8.js"
+  ]
+}
