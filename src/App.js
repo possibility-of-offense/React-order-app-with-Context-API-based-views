@@ -23,7 +23,7 @@ function App() {
           <Header />
         </HeaderContextWrapper>
         <Image
-          src="/images/meals.jpg"
+          src={process.env.PUBLIC_URL + "/images/meals.jpg"}
           className="img-fluid"
           alt="Meals on table"
           title="Meals on table"

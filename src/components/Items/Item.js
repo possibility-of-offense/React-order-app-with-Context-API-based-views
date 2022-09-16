@@ -55,7 +55,7 @@ function Item({ item }) {
     if (useCartContext.view === "cart") {
       useItemsContext.onSetItems(useCartContext.items);
     }
-  }, [useCartContext.items]);
+  }, [useCartContext.items, useCartContext.view, useItemsContext]);
 
   function handleRemoveFromCart(item) {
     useCartContext.removeFromCart(item);

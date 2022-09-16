@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { CartContext } from "../../context/CartContext";
 import { HeaderContext } from "../../context/HeaderContext";
 import Badge from "../UI/Badge";
@@ -12,10 +12,28 @@ function CartLink(props) {
     useHeaderContext.onChangeView("cart");
   }
 
+  const [appendClass, setAppendClass] = useState(false);
+
+  useEffect(() => {
+    if (useCartContext.items.length > 0) {
+      setAppendClass(true);
+
+      let timer = setTimeout(() => {
+        setAppendClass(false);
+      }, 500);
+
+      return () => {
+        clearTimeout(timer);
+      };
+    }
+  }, [useCartContext.items]);
+
   return (
     <div
       onClick={handleCartClick}
-      className={`${classes["cart-link"]} ${props.className}`}
+      className={`${classes["cart-link"]} ${props.className} ${
+        appendClass ? classes.animation : ""
+      }`}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

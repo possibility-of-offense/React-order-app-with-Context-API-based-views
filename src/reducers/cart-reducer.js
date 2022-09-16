@@ -22,6 +22,7 @@ function cartReducer(state, action) {
         ...state,
         items: [],
       };
+      break;
     default:
       break;
   }
