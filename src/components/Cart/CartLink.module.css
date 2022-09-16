@@ -6,10 +6,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 0.25s ease-in-out;
 }
 
 .animation {
-  animation: notify 0.3s ease-in-out alternate;
+  /* animation: notify 0.3s ease-in-out alternate; */
+  transform: scale(1.2);
 }
 
 @keyframes notify {

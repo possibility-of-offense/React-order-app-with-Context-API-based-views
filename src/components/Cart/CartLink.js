@@ -20,7 +20,7 @@ function CartLink(props) {
 
       let timer = setTimeout(() => {
         setAppendClass(false);
-      }, 500);
+      }, 300);
 
       return () => {
         clearTimeout(timer);
