@@ -3,6 +3,8 @@ import { CartContext } from "../../context/CartContext";
 import { ItemsContext } from "../../context/ItemsContext";
 import Item from "./Item";
 
+import classes from "./Items.module.css";
+
 const Items = React.forwardRef((props, ref) => {
   const useItemsContext = useContext(ItemsContext);
   const useCartContext = useContext(CartContext);
@@ -24,7 +26,7 @@ const Items = React.forwardRef((props, ref) => {
   return (
     <div
       ref={mainContainerRef}
-      className="main-container container p-3 mt-4 rounded shadow bg-light"
+      className={`${classes["main-container"]} container p-3 mt-4 rounded shadow bg-light`}
     >
       <h2 className="text-center mb-4">{useItemsContext.title}</h2>
       {useCartContext.view === "cart" && useCartContext.items.length > 0 && (

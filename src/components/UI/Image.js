@@ -9,7 +9,7 @@ function Image(props) {
     <div className="position-relative">
       <img
         src={props.src}
-        alt={props.title}
+        alt={props.alt}
         title={props.title}
         className={props.className}
         style={styling}

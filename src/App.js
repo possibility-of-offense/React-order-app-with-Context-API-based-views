@@ -7,6 +7,8 @@ import CartContextWrapper from "./context/CartContext";
 import HeaderContextWrapper from "./context/HeaderContext";
 import ItemsContextWrapper from "./context/ItemsContext";
 
+import image from "./assets/meals.jpg";
+
 function App() {
   const [showView, setShowView] = useState("items");
   const [searchedWord, setSearchedWord] = useState("");
@@ -23,7 +25,8 @@ function App() {
           <Header />
         </HeaderContextWrapper>
         <Image
-          src={process.env.PUBLIC_URL + "/images/meals.jpg"}
+          // src={process.env.PUBLIC_URL + "/images/meals.jpg"}
+          src={image}
           className="img-fluid"
           alt="Meals on table"
           title="Meals on table"

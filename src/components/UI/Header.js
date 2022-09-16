@@ -18,7 +18,7 @@ function Header(props) {
   }
 
   return (
-    <nav className="navbar navbar-expand-lg bg-light shadow-sm">
+    <nav className="navbar navbar-expand-lg bg-light shadow-sm fixed-top">
       <div className="container-fluid">
         <h1
           className="m-0 fs-3 cursor-pointer"
