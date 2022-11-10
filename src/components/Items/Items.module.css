@@ -1,0 +1,14 @@
+.main-container {
+  animation: showContainer 0.8s ease-in forwards;
+}
+
+@keyframes showContainer {
+  from {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

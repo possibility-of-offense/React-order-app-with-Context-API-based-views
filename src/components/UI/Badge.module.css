@@ -1,0 +1,8 @@
+.badge {
+  border-radius: 50%;
+  padding: 7px;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-content: center;
+}
